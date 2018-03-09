@@ -1,0 +1,32 @@
+{
+  "name": "vue-server-render",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "webpack --config webpack.client.conf.js",
+    "build": "rm -rf ./dist && webpack --config webpack.client.conf.js && webpack --config webpack.server.conf.js ",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2",
+    "vue": "^2.5.13",
+    "vue-server-renderer": "^2.5.13",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "css-loader": "^0.28.7",
+    "html-webpack-plugin": "^2.30.1",
+    "vue-loader": "^13.6.2",
+    "vue-template-compiler": "^2.5.13",
+    "vuex": "^3.0.1",
+    "webpack": "^3.10.0",
+    "webpack-merge": "^4.1.1",
+    "chokidar": "^1.7.0",
+    "webpack-dev-middleware": "^1.12.0",
+    "webpack-hot-middleware": "^2.20.0"
+  }
+}
